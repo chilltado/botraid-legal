@@ -5,7 +5,9 @@ title: Terms of Service — BotRaid
 # Terms of Service
 
 **BotRaid: Idle Strategy TD**
+
 Developer: chilltado
+
 Contact: chilltadolab@gmail.com
 
 Last updated: 6 August 2026

@@ -5,7 +5,9 @@ title: Privacy Policy — BotRaid
 # Privacy Policy
 
 **BotRaid: Idle Strategy TD**
+
 Developer: chilltado
+
 Contact: chilltadolab@gmail.com
 
 Last updated: 6 August 2026
