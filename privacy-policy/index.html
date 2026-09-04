@@ -5,50 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — BotRaid</title>
 <meta name="robots" content="index, follow">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0 auto; padding: 2rem 1.25rem 5rem; max-width: 46rem;
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif;
-    color: #1c1f24; background: #fff;
-    -webkit-text-size-adjust: 100%;
+  :root{
+    --bg:#0b0d13; --panel:#151a25; --line:#2b3446; --line2:#3d4a61;
+    --ink:#e9eef7; --dim:#93a1b8; --faint:#6a7688; --teal:#3ad9d2; --shadow:#04060a;
   }
-  @media (prefers-color-scheme: dark) {
-    body { color: #dfe3ea; background: #14171c; }
-    a { color: #7fb2ff; }
-    hr { border-top-color: #2c313a; }
-    th, td { border-color: #2c313a; }
-    th { background: #1b1f26; }
-    blockquote { border-left-color: #3a4150; color: #aab2c0; }
-    code { background: #1e232b; }
+  *{box-sizing:border-box}
+  body{
+    margin:0;padding:0 0 72px;color:var(--ink);background:var(--bg);
+    font:15px/1.8 "IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    -webkit-text-size-adjust:100%;
+    background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);
+    background-size:32px 32px;
   }
-  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4rem; }
-  h2 { font-size: 1.3rem; margin: 2.4rem 0 .6rem; }
-  h3 { font-size: 1.05rem; margin: 1.8rem 0 .5rem; }
-  p, ul, ol { margin: 0 0 1rem; }
-  ul, ol { padding-left: 1.4rem; }
-  li { margin-bottom: .35rem; }
-  a { color: #0b5ed7; }
-  hr { border: 0; border-top: 1px solid #e3e6ea; margin: 2.2rem 0; }
-  blockquote {
-    margin: 0 0 1rem; padding: .2rem 0 .2rem 1rem;
-    border-left: 3px solid #ccd2da; color: #555c68;
-  }
-  code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: .9em; background: #f1f3f5; padding: .12em .35em; border-radius: 3px;
-  }
-  .table-wrap { overflow-x: auto; margin: 0 0 1rem; }
-  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
-  th, td { border: 1px solid #e3e6ea; padding: .5rem .6rem; text-align: left;
-            vertical-align: top; }
-  th { background: #f7f8fa; font-weight: 600; }
-  footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+  .bar{position:sticky;top:0;z-index:10;background:#0b0d13f2;border-bottom:2px solid var(--line)}
+  .bar div{max-width:52rem;margin:0 auto;padding:0 1.25rem;height:62px;display:flex;align-items:center;gap:11px}
+  .bar a{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-family:"Press Start 2P",monospace;font-size:11px}
+  .bar img{width:28px;height:28px;image-rendering:pixelated}
+  .bar .sp{margin-left:auto;font-family:"Press Start 2P",monospace;font-size:9px;color:var(--faint)}
+  main{max-width:52rem;margin:0 auto;padding:2.6rem 1.25rem 0}
+  h1,h2,h3{font-family:"Press Start 2P",monospace;font-weight:400;letter-spacing:0;line-height:1.55}
+  h1{font-size:clamp(15px,3vw,22px);margin:0 0 1.4rem}
+  h2{font-size:13px;margin:2.8rem 0 .9rem;color:var(--teal)}
+  h3{font-size:11px;margin:2rem 0 .7rem;color:var(--dim)}
+  p,ul,ol{margin:0 0 1.1rem}
+  ul,ol{padding-left:1.3rem}
+  li{margin-bottom:.5rem}
+  strong{color:#fff}
+  a{color:var(--teal)}
+  a:hover{color:#fff}
+  hr{border:0;border-top:2px solid var(--line);margin:2.4rem 0}
+  blockquote{margin:0 0 1.1rem;padding:.9rem 1.1rem;border:2px solid var(--line);border-left:6px solid var(--teal);background:#ffffff06;color:var(--dim)}
+  code{font-family:inherit;background:#ffffff0d;border:1px solid var(--line);padding:.1rem .35rem}
+  table{width:100%;border-collapse:collapse;margin:0 0 1.3rem;font-size:13.5px}
+  th,td{border:2px solid var(--line);padding:.6rem .7rem;text-align:left;vertical-align:top}
+  th{background:var(--panel);font-weight:600;color:var(--ink)}
+  footer{max-width:52rem;margin:3.4rem auto 0;padding:1.6rem 1.25rem 0;border-top:2px solid var(--line);color:var(--faint);font-size:12.5px}
+  footer a{color:var(--faint);text-decoration:none}
+  footer a:hover{color:var(--teal)}
 </style>
 </head>
 <body>
+<div class="bar"><div>
+  <a href="https://chilltado.github.io/"><img src="/assets/chilltado-mark.png" alt="">CHILLTADO</a>
+  <span class="sp">BOTRAID · LEGAL</span>
+</div></div>
+<main>
 <h1>Privacy Policy</h1>
 <p><strong>BotRaid: Idle Strategy TD</strong></p>
 <p>Developer: chilltado</p>
@@ -56,7 +62,8 @@
 <p>Last updated: 6 August 2026</p>
 <hr>
 <h2>The short version</h2>
-<p>BotRaid keeps your game on your device. Nothing is sent to us, because there is no BotRaid server. Three third parties are involved and only when the feature they power is used: <strong>Google Play</strong> (purchases, and the optional sign-in), <strong>Unity LevelPlay</strong> (advertising), and <strong>Google Play Games Services</strong> (the leaderboard and the optional cloud backup of your save).</p>
+<p>BotRaid keeps your game on your device. There is no BotRaid server and no account with us. Four third parties are involved: <strong>Google Play</strong> (purchases, and the optional sign-in), <strong>Unity LevelPlay</strong> (advertising), <strong>Google Play Games Services</strong> (the leaderboard and the optional cloud backup of your save), and <strong>Google Firebase Analytics</strong> (counts of how the game is played).</p>
+<p>The only thing we look at ourselves is that last one, and it reaches us as totals — how many players finished the tutorial, how many took a second platform. It carries no name and nothing that identifies you.</p>
 <p>Signing in is optional, is never required to play, and is never asked for unless you go looking for it.</p>
 <hr>
 <h2>What is stored on your device</h2>
@@ -78,6 +85,15 @@
 <p>Watching a rewarded video is always your choice. Declining costs you nothing but the reward.</p>
 <p>Unity's privacy policy: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></p>
 <hr>
+<h2>Analytics</h2>
+<p>BotRaid measures how the game is played, using <strong>Google Firebase Analytics</strong>. Google processes this on our behalf; we read the totals in Google's console.</p>
+<p><strong>What the game deliberately reports.</strong> Six things, and this is the whole list:</p>
+<ul><li>how far up the twenty-step career track you have got, each time you claim a step;</li><li>the largest number of platforms you have ever held at once;</li><li>whether the tutorial was finished;</li><li>whether a rewarded video was watched to the end or dismissed, and which of the three slots it was;</li><li>which store offers were opened;</li><li>which store offers were bought.</li></ul>
+<p><strong>What Firebase records by itself,</strong> as it does in any app that includes it: an app-instance identifier that Google generates for this installation, your country, device model, operating system version, app version, and when sessions begin and end. That identifier is reset if you clear the app's data or reinstall, and it is not your advertising ID and not a Google account.</p>
+<p><strong>What is never sent.</strong> Not your name. Not the name you set in the game. Not your Google Play Games gamertag or player ID. Not your email address, and no account identifier of any kind. The game has no way to attach any of them to a measurement: the code that reports events accepts only numbers and a fixed list of labels, so there is no field for a name to travel in, and the two Firebase calls that would tag data with a user identity are never made.</p>
+<p><strong>If you are in the EEA, the United Kingdom or Switzerland</strong>, analytics follows the same answer you gave on the consent screen for advertising. There is one question, not two. If you declined, or have not yet answered, <strong>nothing is measured at all</strong> — collection is not started, rather than started and narrowed. Change the answer in Settings and it takes effect immediately, including turning collection off in a session that was already running.</p>
+<p>Firebase's own description of what it collects and how: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<hr>
 <h2>Purchases</h2>
 <p>In-app purchases are processed entirely by <strong>Google Play Billing</strong>. BotRaid never sees, receives or stores your payment card, billing address or Google account details. We are told only that a specific product was purchased, so that the game can deliver it.</p>
 <p>Refunds are handled by Google Play under Google's refund policy.</p>
@@ -94,19 +110,20 @@
 <p><strong>By asking us.</strong> Write to the address at the top of this page. Because we hold no account database, in practice we will point you at the two routes above and confirm we hold nothing further — but if you would rather have that in writing, ask and you will get it within 30 days.</p>
 <hr>
 <h2>Your rights</h2>
-<p>Depending on where you live, you may have the right to access, correct, delete or export your personal information, to object to or restrict its processing, and to withdraw consent you previously gave. For the advertising consent specifically, withdrawal is a single toggle in Settings and takes effect immediately.</p>
+<p>Depending on where you live, you may have the right to access, correct, delete or export your personal information, to object to or restrict its processing, and to withdraw consent you previously gave. For the consent that covers advertising and analytics — it is one answer, not two — withdrawal is a single toggle in Settings and takes effect immediately.</p>
 <p>To exercise any of these, contact chilltadolab@gmail.com.</p>
 <p>If you are in the EEA or the UK and you are not satisfied with our answer, you have the right to complain to your national data protection authority.</p>
 <hr>
 <h2>What we do not do</h2>
 <p>Stated explicitly, because policies of this kind usually list these whether or not they apply, and none of them apply here:</p>
-<ul><li>There is <strong>no BotRaid server</strong> and no account database of our own.</li><li>We do <strong>not</strong> collect your location, contacts, photos, files, microphone or camera. The app requests none of those permissions.</li><li>We do <strong>not</strong> sell your personal information.</li><li>We do <strong>not</strong> run our own analytics or tracking, and there is no newsletter, no email list and no web tracking, because there is no website.</li></ul>
+<ul><li>There is <strong>no BotRaid server</strong> and no account database of our own.</li><li>We do <strong>not</strong> collect your location, contacts, photos, files, microphone or camera. The app requests none of those permissions.</li><li>We do <strong>not</strong> sell your personal information.</li><li>We do <strong>not</strong> track you across other apps or websites. The analytics described above stop at this game.</li><li>We do <strong>not</strong> attach any measurement to you. We cannot look up a player and see what they did, because nothing we send identifies a player.</li><li>There is no newsletter, no email list and no web tracking, because there is no website.</li></ul>
 <hr>
 <h2>Changes</h2>
 <p>If this policy changes materially, the "Last updated" date above changes with it and the updated policy is published at this same URL before the change takes effect in the app.</p>
 <hr>
 <h2>Contact</h2>
 <p>chilltadolab@gmail.com</p>
+</main>
 <footer><a href="/botraid-legal/">All BotRaid legal documents</a></footer>
 </body>
 </html>

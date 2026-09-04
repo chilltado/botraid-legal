@@ -16,11 +16,15 @@ Last updated: 6 August 2026
 
 ## The short version
 
-BotRaid keeps your game on your device. Nothing is sent to us, because there is
-no BotRaid server. Three third parties are involved and only when the feature
-they power is used: **Google Play** (purchases, and the optional sign-in),
-**Unity LevelPlay** (advertising), and **Google Play Games Services** (the
-leaderboard and the optional cloud backup of your save).
+BotRaid keeps your game on your device. There is no BotRaid server and no account
+with us. Four third parties are involved: **Google Play** (purchases, and the
+optional sign-in), **Unity LevelPlay** (advertising), **Google Play Games
+Services** (the leaderboard and the optional cloud backup of your save), and
+**Google Firebase Analytics** (counts of how the game is played).
+
+The only thing we look at ourselves is that last one, and it reaches us as
+totals — how many players finished the tutorial, how many took a second
+platform. It carries no name and nothing that identifies you.
 
 Signing in is optional, is never required to play, and is never asked for unless
 you go looking for it.
@@ -91,6 +95,47 @@ Unity's privacy policy: <https://unity.com/legal/game-player-and-app-user-privac
 
 ---
 
+## Analytics
+
+BotRaid measures how the game is played, using **Google Firebase Analytics**.
+Google processes this on our behalf; we read the totals in Google's console.
+
+**What the game deliberately reports.** Six things, and this is the whole list:
+
+- how far up the twenty-step career track you have got, each time you claim a
+  step;
+- the largest number of platforms you have ever held at once;
+- whether the tutorial was finished;
+- whether a rewarded video was watched to the end or dismissed, and which of the
+  three slots it was;
+- which store offers were opened;
+- which store offers were bought.
+
+**What Firebase records by itself,** as it does in any app that includes it: an
+app-instance identifier that Google generates for this installation, your
+country, device model, operating system version, app version, and when sessions
+begin and end. That identifier is reset if you clear the app's data or
+reinstall, and it is not your advertising ID and not a Google account.
+
+**What is never sent.** Not your name. Not the name you set in the game. Not
+your Google Play Games gamertag or player ID. Not your email address, and no
+account identifier of any kind. The game has no way to attach any of them to a
+measurement: the code that reports events accepts only numbers and a fixed list
+of labels, so there is no field for a name to travel in, and the two Firebase
+calls that would tag data with a user identity are never made.
+
+**If you are in the EEA, the United Kingdom or Switzerland**, analytics follows
+the same answer you gave on the consent screen for advertising. There is one
+question, not two. If you declined, or have not yet answered, **nothing is
+measured at all** — collection is not started, rather than started and narrowed.
+Change the answer in Settings and it takes effect immediately, including turning
+collection off in a session that was already running.
+
+Firebase's own description of what it collects and how:
+<https://firebase.google.com/support/privacy>
+
+---
+
 ## Purchases
 
 In-app purchases are processed entirely by **Google Play Billing**. BotRaid never
@@ -140,8 +185,9 @@ ask and you will get it within 30 days.
 
 Depending on where you live, you may have the right to access, correct, delete or
 export your personal information, to object to or restrict its processing, and to
-withdraw consent you previously gave. For the advertising consent specifically,
-withdrawal is a single toggle in Settings and takes effect immediately.
+withdraw consent you previously gave. For the consent that covers advertising and
+analytics — it is one answer, not two — withdrawal is a single toggle in Settings
+and takes effect immediately.
 
 To exercise any of these, contact chilltadolab@gmail.com.
 
@@ -159,8 +205,12 @@ they apply, and none of them apply here:
 - We do **not** collect your location, contacts, photos, files, microphone or
   camera. The app requests none of those permissions.
 - We do **not** sell your personal information.
-- We do **not** run our own analytics or tracking, and there is no newsletter,
-  no email list and no web tracking, because there is no website.
+- We do **not** track you across other apps or websites. The analytics described
+  above stop at this game.
+- We do **not** attach any measurement to you. We cannot look up a player and see
+  what they did, because nothing we send identifies a player.
+- There is no newsletter, no email list and no web tracking, because there is no
+  website.
 
 ---
 
