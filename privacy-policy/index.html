@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — BotRaid</title>
+<meta name="description" content="Privacy policy of BotRaid, an Android game by chilltado. English and Portuguese (Brazil).">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0d13">
 <link rel="icon" href="/favicon-32.png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +17,20 @@
     --ink:#e9eef7; --dim:#93a1b8; --faint:#6a7688; --teal:#3ad9d2; --shadow:#04060a;
   }
   *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{
     margin:0;padding:0 0 72px;color:var(--ink);background:var(--bg);
     font:15px/1.8 "IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-    -webkit-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;overflow-wrap:anywhere;
     background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);
     background-size:32px 32px;
   }
   .bar{position:sticky;top:0;z-index:10;background:#0b0d13f2;border-bottom:2px solid var(--line)}
-  .bar div{max-width:52rem;margin:0 auto;padding:0 1.25rem;height:62px;display:flex;align-items:center;gap:11px}
+  .bar div{max-width:52rem;margin:0 auto;padding:0 1rem;height:62px;display:flex;align-items:center;gap:11px}
   .bar a{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-family:"Press Start 2P",monospace;font-size:11px}
   .bar img{width:28px;height:28px;image-rendering:pixelated}
-  .bar .sp{margin-left:auto;font-family:"Press Start 2P",monospace;font-size:9px;color:var(--faint)}
-  main{max-width:52rem;margin:0 auto;padding:2.6rem 1.25rem 0}
+  .bar .sp{margin-left:auto;font-family:"Press Start 2P",monospace;font-size:9px;color:var(--faint);text-align:right}
+  main{max-width:52rem;margin:0 auto;padding:2.6rem 1rem 0}
   h1,h2,h3{font-family:"Press Start 2P",monospace;font-weight:400;letter-spacing:0;line-height:1.55}
   h1{font-size:clamp(15px,3vw,22px);margin:0 0 1.4rem}
   h2{font-size:13px;margin:2.8rem 0 .9rem;color:var(--teal)}
@@ -35,16 +38,19 @@
   p,ul,ol{margin:0 0 1.1rem}
   ul,ol{padding-left:1.3rem}
   li{margin-bottom:.5rem}
+  li ul{margin:.5rem 0 0}
   strong{color:#fff}
   a{color:var(--teal)}
   a:hover{color:#fff}
   hr{border:0;border-top:2px solid var(--line);margin:2.4rem 0}
-  blockquote{margin:0 0 1.1rem;padding:.9rem 1.1rem;border:2px solid var(--line);border-left:6px solid var(--teal);background:#ffffff06;color:var(--dim)}
   code{font-family:inherit;background:#ffffff0d;border:1px solid var(--line);padding:.1rem .35rem}
-  table{width:100%;border-collapse:collapse;margin:0 0 1.3rem;font-size:13.5px}
+  .table{overflow-x:auto;margin:0 0 1.3rem}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:36rem}
   th,td{border:2px solid var(--line);padding:.6rem .7rem;text-align:left;vertical-align:top}
   th{background:var(--panel);font-weight:600;color:var(--ink)}
-  footer{max-width:52rem;margin:3.4rem auto 0;padding:1.6rem 1.25rem 0;border-top:2px solid var(--line);color:var(--faint);font-size:12.5px}
+  .lang{display:inline-block;margin:0 0 1.4rem;padding:.35rem .7rem;border:2px solid var(--line2);text-decoration:none;font-size:13px}
+  .lang:hover{border-color:var(--teal)}
+  footer{max-width:52rem;margin:3.4rem auto 0;padding:1.6rem 1rem 0;border-top:2px solid var(--line);color:var(--faint);font-size:12.5px}
   footer a{color:var(--faint);text-decoration:none}
   footer a:hover{color:var(--teal)}
 </style>
@@ -56,74 +62,169 @@
 </div></div>
 <main>
 <h1>Privacy Policy</h1>
-<p><strong>BotRaid: Idle Strategy TD</strong></p>
-<p>Developer: chilltado</p>
-<p>Contact: chilltadolab@gmail.com</p>
-<p>Last updated: 6 August 2026</p>
+<p><strong>BotRaid: Robot Puzzle Battles</strong> (Android app <code>com.chilltado.botconquest</code>)<br>
+Developer: chilltado, independent developer based in Brazil<br>
+Contact: chilltadolab@gmail.com<br>
+Last updated: 28 October 2026</p>
+<a class="lang" href="#pt">Leia em português (Brasil)</a>
 <hr>
-<h2>The short version</h2>
-<p>BotRaid keeps your game on your device. There is no BotRaid server and no account with us. Four third parties are involved: <strong>Google Play</strong> (purchases, and the optional sign-in), <strong>Unity LevelPlay</strong> (advertising), <strong>Google Play Games Services</strong> (the leaderboard and the optional cloud backup of your save), and <strong>Google Firebase Analytics</strong> (counts of how the game is played).</p>
-<p>The only thing we look at ourselves is that last one, and it reaches us as totals — how many players finished the tutorial, how many took a second platform. It carries no name and nothing that identifies you.</p>
-<p>Signing in is optional, is never required to play, and is never asked for unless you go looking for it.</p>
+<h2>Summary</h2>
+<ul><li><strong>No account with us and no server of ours.</strong> Your game is saved on your device.</li><li><strong>Ads</strong> come through <strong>Unity LevelPlay</strong>, with <strong>Google AdMob</strong>, <strong>Unity Ads</strong> and <strong>Liftoff (Vungle)</strong>. These companies use your advertising ID and device data to show and measure ads.</li><li><strong>Google Firebase</strong> measures how the game is played (Analytics), reports crashes (Crashlytics) and sends game settings (Remote Config).</li><li><strong>Google Play Games</strong> (optional): sign-in, a stars leaderboard, achievements and a cloud backup of your save, kept in your Google account.</li><li><strong>Purchases</strong> go through <strong>Google Play</strong>. The game remembers on your device that you have bought something; that changes some game rules, described in section 6.</li><li><strong>Reminders</strong> are local notifications you can turn off.</li><li>In the EEA, UK and Switzerland, personalised ads, analytics and crash reports stay <strong>off until you agree</strong>.</li></ul>
 <hr>
-<h2>What is stored on your device</h2>
-<p>Your entire game — territory, robots, currencies, levels, mission progress and settings — is written to your device's own app storage. It is not readable by other apps and it is removed when you uninstall the game.</p>
-<p>We do not receive a copy of it unless you sign in and enable cloud backup, which is described below.</p>
+<h2>1. Data on your device</h2>
+<p>The game saves on your device, in the app's private storage:</p>
+<ul><li>your progress: robots, parts, crystals, gold, campaign, season, missions and settings;</li><li>a device identifier that Unity derives from Android's device ID, stored in the save;</li><li>the Google Play order IDs of your purchases and a "has paid" flag;</li><li>your privacy choices (with the date), reminder settings and local backup copies of the save.</li></ul>
+<p>Other apps cannot read it. It is removed when you uninstall the game or clear its storage.</p>
 <hr>
-<h2>If you sign in with Google Play Games (optional)</h2>
-<p>BotRaid never signs you in on its own. There is no sign-in attempt at all for a player who has not linked an account. It is offered in exactly two places: the leaderboard screen, and the account row in Settings.</p>
-<p>If you do sign in:</p>
-<ul><li><strong>Your Google Play Games player ID and gamertag</strong> are used to identify you on the leaderboard and to attach your cloud save. We see the gamertag you have chosen with Google — not your Google account email, and not your real name unless your gamertag is your real name.</li><li><strong>Your best combat power</strong> and the size band of your territory are submitted to Google Play Games leaderboards, where other players can see your gamertag next to that score.</li><li><strong>A copy of your save file</strong> is stored in your own Google account's app storage (Google Play Games Saved Games). It is your data, held in your account, and it is subject to Google's privacy policy.</li></ul>
-<p>Signing out, or never signing in, removes all of the above from the picture. The game plays identically.</p>
-<p>Google's handling of this data is described at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+<h2>2. Google Play Games (optional)</h2>
+<p>Linking is offered in <strong>Settings → Link Google account</strong> and on the leaderboard screen. The game never uploads anything for a player who has not linked. Once you link, the game signs you in automatically on later launches. Google's Play Games SDK is initialised at start, and Google may recognise your Play Games profile on its own.</p>
+<p>If you link:</p>
+<ul><li>your <strong>Play Games player ID, display name and avatar</strong> are used for the leaderboard and the cloud save;</li><li>your <strong>total campaign stars</strong> go to a public leaderboard, next to your Play Games name;</li><li><strong>achievements</strong> (18) are reported to your Play Games profile;</li><li>a <strong>copy of your save</strong> (including the device identifier and order IDs above) and backup copies are stored in <strong>Saved Games</strong>, in your Google account.</li></ul>
+<p><strong>Settings → Sign out</strong> backs up your save to your Google account and removes it from this device; the cloud copy stays. To delete the cloud copy, the leaderboard entry and achievements, see section 10.</p>
 <hr>
-<h2>Advertising</h2>
-<p>BotRaid shows ads through <strong>Unity LevelPlay</strong> (ironSource), which mediates several advertising networks. Those networks may use your device's <strong>advertising ID</strong> and coarse technical information — device model, operating system version, approximate region derived from IP, and whether an ad was shown, clicked or completed — to select and measure ads.</p>
-<p>We do not receive that information. We receive only aggregate revenue reporting.</p>
-<p><strong>If you are in the EEA, the United Kingdom or Switzerland</strong>, the game asks you before any of it happens, on a consent screen shown at first launch. If you decline, ads still appear but are <strong>non-personalised</strong> — the networks are told not to profile you. You can change the answer at any time in Settings.</p>
-<p><strong>If you are in the United States</strong>, the same screen offers the "Do not sell or share my personal information" opt-out required by the CCPA/CPRA, and it is honoured by passing the opt-out signal to the ad networks.</p>
-<p>Watching a rewarded video is always your choice. Declining costs you nothing but the reward.</p>
-<p>Unity's privacy policy: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></p>
+<h2>3. Advertising</h2>
+<p>The game shows a bottom banner, interstitial ads between boards and optional rewarded videos. <strong>No Ads</strong> turns off banner and interstitial ads.</p>
+<p>The ad companies collect: advertising ID, app set ID, IP address and the approximate location derived from it, device information (model, OS, language, screen, network), ad interactions (impressions, clicks, video completion) and SDK diagnostics. They use it to show, measure and (if allowed) personalise ads, to limit repetition and to prevent fraud, under their own policies, and may pass ad requests to their advertising partners. Ads are not loaded on Android versions older than 9.</p>
 <hr>
-<h2>Analytics</h2>
-<p>BotRaid measures how the game is played, using <strong>Google Firebase Analytics</strong>. Google processes this on our behalf; we read the totals in Google's console.</p>
-<p><strong>What the game deliberately reports.</strong> Six things, and this is the whole list:</p>
-<ul><li>how far up the twenty-step career track you have got, each time you claim a step;</li><li>the largest number of platforms you have ever held at once;</li><li>whether the tutorial was finished;</li><li>whether a rewarded video was watched to the end or dismissed, and which of the three slots it was;</li><li>which store offers were opened;</li><li>which store offers were bought.</li></ul>
-<p><strong>What Firebase records by itself,</strong> as it does in any app that includes it: an app-instance identifier that Google generates for this installation, your country, device model, operating system version, app version, and when sessions begin and end. That identifier is reset if you clear the app's data or reinstall, and it is not your advertising ID and not a Google account.</p>
-<p><strong>What is never sent.</strong> Not your name. Not the name you set in the game. Not your Google Play Games gamertag or player ID. Not your email address, and no account identifier of any kind. The game has no way to attach any of them to a measurement: the code that reports events accepts only numbers and a fixed list of labels, so there is no field for a name to travel in, and the two Firebase calls that would tag data with a user identity are never made.</p>
-<p><strong>If you are in the EEA, the United Kingdom or Switzerland</strong>, analytics follows the same answer you gave on the consent screen for advertising. There is one question, not two. If you declined, or have not yet answered, <strong>nothing is measured at all</strong> — collection is not started, rather than started and narrowed. Change the answer in Settings and it takes effect immediately, including turning collection off in a session that was already running.</p>
-<p>Firebase's own description of what it collects and how: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h2>4. Firebase: analytics, crash reports and remote settings</h2>
+<p><strong>Firebase Analytics</strong> records, with a random app-instance ID (no name, no email, no account):</p>
+<ul><li>your progress: tutorial completed, career steps, territory held, milestone boards;</li><li>each board: started, finished or skipped, with world, difficulty, result, time, stars, whether auto-play was on and how many parts you own and their levels;</li><li>screens opened;</li><li>ads: each attempt (placement, format, outcome) and whether a rewarded video was watched to the end;</li><li>store offers opened and bought;</li><li>what Firebase records by itself: first open, sessions, app updates, in-app purchases, country, device model, OS and app version. On Android, Firebase can also read the advertising ID.</li></ul>
+<p><strong>Firebase Crashlytics</strong> sends crash and error reports: stack trace, device model, OS, app version, a Crashlytics installation ID, recent log lines and four game counters (boards on the field, boards held, roster size, career step).</p>
+<p><strong>Firebase Remote Config</strong> downloads game settings (balance, ad frequency, offers, event switches) <strong>at every launch, before any consent question</strong>. To do so it sends a Firebase installation ID, the app version and device locale. It does not send gameplay data.</p>
+<p>We see analytics as reports and can inspect events per app-instance ID; we cannot link them to your name or Google account.</p>
 <hr>
-<h2>Purchases</h2>
-<p>In-app purchases are processed entirely by <strong>Google Play Billing</strong>. BotRaid never sees, receives or stores your payment card, billing address or Google account details. We are told only that a specific product was purchased, so that the game can deliver it.</p>
-<p>Refunds are handled by Google Play under Google's refund policy.</p>
+<h2>5. Purchases</h2>
+<p>In-app purchases (crystal packs, No Ads, Special Offer, season packs) are processed by <strong>Google Play Billing</strong> through Unity IAP. We never see your payment card, billing address or Google account. The game receives the order ID, keeps it on your device and in the cloud save, and checks it on the device; there is no purchase server of ours. Refunds follow Google Play's refund policy.</p>
 <hr>
-<h2>Children</h2>
-<p><strong>BotRaid is not directed at children.</strong> It is declared as such in the Google Play Console under "Target audience and content", and the app tells the advertising SDK the same thing.</p>
-<p>We do not knowingly collect personal information from children under 13 (or the equivalent age in your country). If you believe a child has provided information through a Google account signed into this game, contact us at the address at the top and we will help you remove it.</p>
+<h2>6. Gacha odds and the supporter bonus</h2>
+<ul><li>Part crates give random parts. <strong>Show crate odds</strong> in the store lists the odds of each rarity before you open a crate. Pity guarantees a high rarity after a set number of pulls, and target robots steer which robot's parts drop.</li><li><strong>Supporter bonus.</strong> If you have ever made a real purchase, the game raises the chance of Rare and better parts: their weights are multiplied by <strong>1.5</strong> (a value we can change with Remote Config, or switch off). With the default weights the odds become about 57.0 / 32.1 / 7.7 / 2.6 / 0.64 % instead of 66.5 / 25.0 / 6.0 / 2.0 / 0.5 % (Standard / Rare / Epic / Prototype / Legendary). The odds shown to a supporter already include the bonus and say so.</li><li>The same "has paid" flag also lets us set a shorter wait between ads for paying players (Remote Config).</li><li>The season <strong>Order Crate</strong> uses the base rarity weights (no supporter bonus).</li></ul>
+<p>This uses only the flag on your device; it is not sent to us.</p>
 <hr>
-<h2>Deleting your data</h2>
-<p><strong>On the device.</strong> Settings → Reset account erases the local profile. Uninstalling the game removes it entirely.</p>
-<p><strong>In your Google account.</strong> Because the cloud save and the leaderboard entry live in *your* Google Play Games account rather than on our servers, you delete them the same way you delete any Play Games data:</p>
-<blockquote><p>Google Play Games app → Settings → Delete Play Games account data, or <a href="https://myaccount.google.com/">https://myaccount.google.com/</a> → Data &amp; privacy.</p></blockquote>
-<p>You can delete the data for BotRaid specifically, or for all games at once.</p>
-<p><strong>By asking us.</strong> Write to the address at the top of this page. Because we hold no account database, in practice we will point you at the two routes above and confirm we hold nothing further — but if you would rather have that in writing, ask and you will get it within 30 days.</p>
+<h2>7. Reminders</h2>
+<p>The game can schedule <strong>local notifications</strong>: daily parts and missions, streak, boss window and a reminder after 7 days away. Android asks your permission first. Turn them off in <strong>Settings → Reminders</strong> or in Android settings. No push server is used.</p>
 <hr>
-<h2>Your rights</h2>
-<p>Depending on where you live, you may have the right to access, correct, delete or export your personal information, to object to or restrict its processing, and to withdraw consent you previously gave. For the consent that covers advertising and analytics — it is one answer, not two — withdrawal is a single toggle in Settings and takes effect immediately.</p>
-<p>To exercise any of these, contact chilltadolab@gmail.com.</p>
-<p>If you are in the EEA or the UK and you are not satisfied with our answer, you have the right to complain to your national data protection authority.</p>
+<h2>8. Other Google Play services</h2>
+<p>The game uses Google Play In-App Review (rating prompt), In-App Update, Play Asset Delivery (downloading game content) and the Install Referrer (how the app was installed, read by the SDKs).</p>
 <hr>
-<h2>What we do not do</h2>
-<p>Stated explicitly, because policies of this kind usually list these whether or not they apply, and none of them apply here:</p>
-<ul><li>There is <strong>no BotRaid server</strong> and no account database of our own.</li><li>We do <strong>not</strong> collect your location, contacts, photos, files, microphone or camera. The app requests none of those permissions.</li><li>We do <strong>not</strong> sell your personal information.</li><li>We do <strong>not</strong> track you across other apps or websites. The analytics described above stop at this game.</li><li>We do <strong>not</strong> attach any measurement to you. We cannot look up a player and see what they did, because nothing we send identifies a player.</li><li>There is no newsletter, no email list and no web tracking, because there is no website.</li></ul>
+<h2>9. Consent and your choices</h2>
+<ul><li><strong>EEA, EFTA, UK and Switzerland</strong> (by your device's region setting, or when it is unknown): before ads start, a screen asks whether partners may use your advertising ID and activity to personalise ads. Until you agree, <strong>analytics and crash reports are off</strong>; if you refuse, ads are non-personalised and analytics and crash reports stay off.</li><li><strong>Everywhere:</strong> <strong>Settings → Privacy → Change ad privacy choice</strong> reopens that screen. Refusing there turns off personalised ads, analytics and crash reports. Remote Config keeps working.</li><li><strong>United States:</strong> <strong>Settings → Privacy → Sharing of your information</strong> tells the ad networks not to sell or share your information. It does not turn off analytics or crash reports; use "Change ad privacy choice" for that. We do not sell personal information for money.</li><li><strong>Advertising ID:</strong> in Android settings (<strong>Privacy → Ads</strong>) you can delete or reset it.</li><li><strong>Reminders and Play Games</strong> are opt-in.</li></ul>
+<p>Legal bases (GDPR, UK GDPR, LGPD): consent for personalised ads, analytics and crash reports where the law requires it; legitimate interest for non-personalised ads, Remote Config, analytics and crash reports elsewhere, and fraud prevention; contract for purchases and the cloud save.</p>
 <hr>
-<h2>Changes</h2>
-<p>If this policy changes materially, the "Last updated" date above changes with it and the updated policy is published at this same URL before the change takes effect in the app.</p>
+<h2>10. Deleting your data</h2>
+<ul><li><strong>On this device:</strong> uninstall the game, or Android <strong>Settings → Apps → BotRaid → Storage → Clear storage</strong>. The game has no in-app "delete everything" button.</li><li><strong>Cloud save, leaderboard and achievements:</strong> Google Play Games app → <strong>Settings → Delete Play Games account &amp; data</strong> (for BotRaid only, or all games), or <a href="https://myaccount.google.com/">https://myaccount.google.com/</a> → Data &amp; privacy.</li><li><strong>Analytics and crash reports:</strong> turn them off with <strong>Change ad privacy choice</strong>. What was already collected is tied to a random ID, not to you, so we usually cannot find it; it is deleted automatically when its retention ends: 90 days for crash reports, and the retention period set in our Google Analytics settings for analytics (at most 14 months). You can still email us and we will do what we can.</li><li><strong>Advertising data:</strong> delete or reset your advertising ID and use the ad companies' own forms.</li></ul>
+<p>We will answer requests within 15 days.</p>
 <hr>
-<h2>Contact</h2>
-<p>chilltadolab@gmail.com</p>
+<h2>11. Third parties</h2>
+<div class="table"><table>
+<tr><th>Service</th><th>Role</th><th>Privacy policy</th></tr>
+<tr><td>Unity LevelPlay, Unity Ads (Unity Technologies, incl. ironSource Ads)</td><td>ad mediation and ads; engine diagnostics</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></td></tr>
+<tr><td>Google AdMob</td><td>ads</td><td><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></td></tr>
+<tr><td>Liftoff Monetize (Vungle)</td><td>ads</td><td><a href="https://liftoff.io/privacy-policy/">https://liftoff.io/privacy-policy/</a></td></tr>
+<tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>measurement, crash reports, settings</td><td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td></tr>
+<tr><td>Google Play, Play Games, Play Billing</td><td>download, sign-in, leaderboard, cloud save, purchases</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+</table></div>
+<p>These companies may process data outside your country, including in the United States.</p>
+<hr>
+<h2>12. Children</h2>
+<p>BotRaid is for a general audience and is <strong>not directed to children under 13</strong>. The game tells the ad networks it is not child-directed. We do not knowingly collect personal information from children under 13 (or the minimum age in your country). If you believe a child's data was collected, contact us and we will help remove it.</p>
+<hr>
+<h2>13. Security</h2>
+<p>Data stays in the app's private storage, the cloud save in your Google account, and the services send data over HTTPS. No method is completely secure.</p>
+<hr>
+<h2>14. Your rights</h2>
+<p>Depending on where you live (GDPR, UK GDPR, LGPD, US state laws), you may have the right to access, correct, delete or port your data, to object or restrict processing, to withdraw consent and to opt out of targeted advertising. Contact chilltadolab@gmail.com. You may also complain to your data protection authority (in Brazil, the ANPD).</p>
+<hr>
+<h2>15. Permissions</h2>
+<p>Internet and network state; Google Play billing; advertising ID and Android ad-services (attribution, topics); basic phone state (non-sensitive, used by an ad SDK); install referrer; notifications (reminders); wake lock and foreground service (data sync, used by Play Asset Delivery downloads); Amazon device attestation (ad SDK, Amazon devices only). No location, contacts, camera, microphone, photos or files.</p>
+<hr>
+<h2>16. Changes</h2>
+<p>We publish changes at this address and update the date above, before the app update that needs them.</p>
+<hr>
+<h2>17. Contact</h2>
+<p>chilltado — chilltadolab@gmail.com</p>
+<hr>
+<a id="pt"></a>
+<h1>Política de Privacidade (português)</h1>
+<p><strong>BotRaid: Robot Puzzle Battles</strong> (app Android <code>com.chilltado.botconquest</code>)<br>
+Desenvolvedor: chilltado, desenvolvedor independente no Brasil<br>
+Contato: chilltadolab@gmail.com<br>
+Atualizada em: 28 de outubro de 2026</p>
+<hr>
+<h2>Resumo</h2>
+<ul><li><strong>Sem conta conosco e sem servidor nosso.</strong> Seu jogo fica salvo no aparelho.</li><li><strong>Anúncios</strong> vêm pelo <strong>Unity LevelPlay</strong>, com <strong>Google AdMob</strong>, <strong>Unity Ads</strong> e <strong>Liftoff (Vungle)</strong>. Essas empresas usam seu ID de publicidade e dados do aparelho para mostrar e medir anúncios.</li><li>O <strong>Google Firebase</strong> mede como o jogo é jogado (Analytics), relata falhas (Crashlytics) e envia configurações do jogo (Remote Config).</li><li><strong>Google Play Games</strong> (opcional): login, placar de estrelas, conquistas e backup do save na nuvem, guardados na sua conta Google.</li><li><strong>Compras</strong> passam pelo <strong>Google Play</strong>. O jogo guarda no aparelho que você já comprou algo; isso muda algumas regras do jogo, descritas na seção 6.</li><li><strong>Lembretes</strong> são notificações locais que você pode desligar.</li><li>No EEE, Reino Unido e Suíça, anúncios personalizados, analytics e relatórios de falha ficam <strong>desligados até você concordar</strong>.</li></ul>
+<hr>
+<h2>1. Dados no seu aparelho</h2>
+<p>O jogo salva no armazenamento privado do app:</p>
+<ul><li>seu progresso: robôs, peças, cristais, ouro, campanha, temporada, missões e configurações;</li><li>um identificador do aparelho que a Unity deriva do ID do Android, guardado no save;</li><li>os IDs de pedido do Google Play das suas compras e uma marca de "já pagou";</li><li>suas escolhas de privacidade (com a data), configurações de lembretes e cópias locais de backup do save.</li></ul>
+<p>Outros apps não conseguem ler. Tudo é apagado ao desinstalar o jogo ou limpar o armazenamento.</p>
+<hr>
+<h2>2. Google Play Games (opcional)</h2>
+<p>O vínculo é oferecido em <strong>Ajustes → Vincular conta Google</strong> e na tela do placar. O jogo nunca envia nada de quem não vinculou. Depois de vincular, o jogo faz login sozinho nas aberturas seguintes. O SDK do Play Games é iniciado na abertura, e o Google pode reconhecer seu perfil do Play Games por conta própria.</p>
+<p>Se você vincular:</p>
+<ul><li>seu <strong>ID de jogador, nome de exibição e avatar do Play Games</strong> são usados no placar e no save na nuvem;</li><li>seu <strong>total de estrelas da campanha</strong> vai para um placar público, ao lado do seu nome no Play Games;</li><li><strong>conquistas</strong> (18) são registradas no seu perfil do Play Games;</li><li>uma <strong>cópia do save</strong> (com o identificador do aparelho e os IDs de pedido acima) e cópias de backup ficam no <strong>Saved Games</strong>, na sua conta Google.</li></ul>
+<p><strong>Ajustes → Sair</strong> faz backup do save na sua conta Google e o remove deste aparelho; a cópia na nuvem continua. Para apagar a cópia na nuvem, o placar e as conquistas, veja a seção 10.</p>
+<hr>
+<h2>3. Anúncios</h2>
+<p>O jogo mostra um banner embaixo, intersticiais entre fases e vídeos recompensados opcionais. <strong>Sem anúncios</strong> desliga o banner e os intersticiais.</p>
+<p>As empresas de anúncios coletam: ID de publicidade, app set ID, endereço IP e a localização aproximada derivada dele, dados do aparelho (modelo, sistema, idioma, tela, rede), interações com anúncios (impressões, cliques, vídeo concluído) e diagnósticos do SDK. Usam isso para mostrar, medir e (se permitido) personalizar anúncios, limitar repetição e prevenir fraude, conforme as políticas delas, e podem repassar pedidos de anúncio a parceiros. Anúncios não são carregados em Android anterior ao 9.</p>
+<hr>
+<h2>4. Firebase: analytics, relatórios de falha e configurações remotas</h2>
+<p>O <strong>Firebase Analytics</strong> registra, com um ID aleatório de instalação (sem nome, sem e-mail, sem conta):</p>
+<ul><li>seu progresso: tutorial concluído, etapas de carreira, território, fases-marco;</li><li>cada fase: iniciada, terminada ou pulada, com mundo, dificuldade, resultado, tempo, estrelas, se o auto-play estava ligado e quantas peças você tem e seus níveis;</li><li>telas abertas;</li><li>anúncios: cada tentativa (posição, formato, resultado) e se o vídeo recompensado foi assistido até o fim;</li><li>ofertas da loja abertas e compradas;</li><li>o que o Firebase registra sozinho: primeira abertura, sessões, atualizações, compras no app, país, modelo do aparelho, sistema e versão do app. No Android, o Firebase também pode ler o ID de publicidade.</li></ul>
+<p>O <strong>Firebase Crashlytics</strong> envia relatórios de falha: rastreamento, modelo do aparelho, sistema, versão do app, um ID de instalação do Crashlytics, linhas recentes de log e quatro contadores do jogo (fases em campo, fases conquistadas, tamanho do elenco, etapa de carreira).</p>
+<p>O <strong>Firebase Remote Config</strong> baixa configurações do jogo (balanceamento, frequência de anúncios, ofertas, eventos) <strong>a cada abertura, antes de qualquer pergunta de consentimento</strong>. Para isso envia um ID de instalação do Firebase, a versão do app e o idioma do aparelho. Não envia dados de jogo.</p>
+<p>Vemos o analytics em relatórios e podemos consultar eventos por ID de instalação; não conseguimos ligá-los ao seu nome ou conta Google.</p>
+<hr>
+<h2>5. Compras</h2>
+<p>As compras no app (pacotes de cristais, Sem anúncios, Oferta especial, pacotes de temporada) são processadas pelo <strong>Google Play Billing</strong> por meio do Unity IAP. Nunca vemos cartão, endereço de cobrança ou conta Google. O jogo recebe o ID do pedido, guarda no aparelho e no save na nuvem e confere no próprio aparelho; não temos servidor de compras. Reembolsos seguem a política do Google Play.</p>
+<hr>
+<h2>6. Chances do gacha e bônus de apoiador</h2>
+<ul><li>As caixas de peças dão peças aleatórias. <strong>Ver chances da caixa</strong> na loja mostra a chance de cada raridade antes de abrir. A garantia (pity) assegura raridade alta depois de um número de puxadas, e os robôs-alvo direcionam de qual robô vêm as peças.</li><li><strong>Bônus de apoiador.</strong> Se você já fez uma compra real, o jogo aumenta a chance de peças Raras ou melhores: os pesos delas são multiplicados por <strong>1,5</strong> (valor que podemos mudar pelo Remote Config ou desligar). Com os pesos padrão, as chances passam a ser cerca de 57,0 / 32,1 / 7,7 / 2,6 / 0,64 % em vez de 66,5 / 25,0 / 6,0 / 2,0 / 0,5 % (Padrão / Rara / Épica / Protótipo / Lendária). As chances mostradas a um apoiador já incluem o bônus e avisam isso.</li><li>A mesma marca de "já pagou" também permite um intervalo menor entre anúncios para quem pagou (Remote Config).</li><li>A <strong>Caixa de Ordens</strong> da temporada usa os pesos base (sem bônus de apoiador).</li></ul>
+<p>Isso usa só a marca no seu aparelho; ela não é enviada para nós.</p>
+<hr>
+<h2>7. Lembretes</h2>
+<p>O jogo pode agendar <strong>notificações locais</strong>: peças e missões diárias, sequência, janela do chefe e um lembrete após 7 dias fora. O Android pede sua permissão antes. Desligue em <strong>Ajustes → Avisos</strong> ou nas configurações do Android. Não há servidor de push.</p>
+<hr>
+<h2>8. Outros serviços do Google Play</h2>
+<p>O jogo usa o In-App Review do Google Play (pedido de avaliação), In-App Update, Play Asset Delivery (download de conteúdo) e o Install Referrer (como o app foi instalado, lido pelos SDKs).</p>
+<hr>
+<h2>9. Consentimento e suas escolhas</h2>
+<ul><li><strong>EEE, AELC, Reino Unido e Suíça</strong> (pela região configurada no aparelho, ou quando ela é desconhecida): antes dos anúncios, uma tela pergunta se os parceiros podem usar seu ID de publicidade e sua atividade para personalizar anúncios. Até você concordar, <strong>analytics e relatórios de falha ficam desligados</strong>; se recusar, os anúncios são não personalizados e analytics e relatórios de falha continuam desligados.</li><li><strong>Em qualquer lugar:</strong> <strong>Ajustes → Privacidade → Mudar escolha de privacidade</strong> reabre essa tela. Recusar ali desliga anúncios personalizados, analytics e relatórios de falha. O Remote Config continua funcionando.</li><li><strong>Estados Unidos:</strong> <strong>Ajustes → Privacidade → Compartilhamento das suas informações</strong> avisa as redes de anúncios para não vender nem compartilhar suas informações. Isso não desliga analytics nem relatórios de falha; para isso use "Mudar escolha de privacidade". Não vendemos dados pessoais por dinheiro.</li><li><strong>ID de publicidade:</strong> nas configurações do Android (<strong>Privacidade → Anúncios</strong>) você pode excluir ou redefinir.</li><li><strong>Avisos (lembretes) e Play Games</strong> só funcionam se você ativar.</li></ul>
+<p>Bases legais (LGPD, GDPR, UK GDPR): consentimento para anúncios personalizados, analytics e relatórios de falha onde a lei exige; legítimo interesse para anúncios não personalizados, Remote Config, analytics e relatórios de falha nas demais regiões, e prevenção de fraude; execução de contrato para compras e o save na nuvem.</p>
+<hr>
+<h2>10. Como apagar seus dados</h2>
+<ul><li><strong>Neste aparelho:</strong> desinstale o jogo ou, no Android, <strong>Configurações → Apps → BotRaid → Armazenamento → Limpar armazenamento</strong>. O jogo não tem um botão de "apagar tudo".</li><li><strong>Save na nuvem, placar e conquistas:</strong> app Google Play Games → <strong>Configurações → Excluir conta e dados do Play Games</strong> (só do BotRaid ou de todos os jogos), ou <a href="https://myaccount.google.com/">https://myaccount.google.com/</a> → Dados e privacidade.</li><li><strong>Analytics e relatórios de falha:</strong> desligue com <strong>Mudar escolha de privacidade</strong>. O que já foi coletado está ligado a um ID aleatório, não a você, então em geral não conseguimos encontrá-lo; é apagado automaticamente ao fim da retenção: 90 dias para relatórios de falha e o período configurado no nosso Google Analytics para analytics (no máximo 14 meses). Mesmo assim, mande um e-mail e faremos o possível.</li><li><strong>Dados de anúncios:</strong> exclua ou redefina o ID de publicidade e use os canais das empresas de anúncios.</li></ul>
+<p>Respondemos pedidos em até 15 dias.</p>
+<hr>
+<h2>11. Terceiros</h2>
+<div class="table"><table>
+<tr><th>Serviço</th><th>Função</th><th>Política de privacidade</th></tr>
+<tr><td>Unity LevelPlay, Unity Ads (Unity Technologies, incl. ironSource Ads)</td><td>mediação e anúncios; diagnósticos do motor</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></td></tr>
+<tr><td>Google AdMob</td><td>anúncios</td><td><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></td></tr>
+<tr><td>Liftoff Monetize (Vungle)</td><td>anúncios</td><td><a href="https://liftoff.io/privacy-policy/">https://liftoff.io/privacy-policy/</a></td></tr>
+<tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>medição, falhas, configurações</td><td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td></tr>
+<tr><td>Google Play, Play Games, Play Billing</td><td>download, login, placar, save na nuvem, compras</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+</table></div>
+<p>Essas empresas podem tratar dados fora do seu país, inclusive nos Estados Unidos.</p>
+<hr>
+<h2>12. Crianças</h2>
+<p>O BotRaid é para o público geral e <strong>não é direcionado a menores de 13 anos</strong>. O jogo informa às redes de anúncios que não é direcionado a crianças. Não coletamos intencionalmente dados pessoais de menores de 13 anos (ou da idade mínima no seu país). Se acredita que dados de uma criança foram coletados, fale conosco e ajudamos a removê-los.</p>
+<hr>
+<h2>13. Segurança</h2>
+<p>Os dados ficam no armazenamento privado do app, o save na nuvem na sua conta Google, e os serviços enviam dados por HTTPS. Nenhum meio é totalmente seguro.</p>
+<hr>
+<h2>14. Seus direitos</h2>
+<p>Conforme onde você mora (LGPD, GDPR, UK GDPR, leis estaduais dos EUA), você pode ter direito de acessar, corrigir, apagar ou portar seus dados, de se opor ou limitar o tratamento, de revogar o consentimento e de recusar publicidade direcionada. Escreva para chilltadolab@gmail.com. Você também pode reclamar à autoridade de proteção de dados (no Brasil, a ANPD).</p>
+<hr>
+<h2>15. Permissões</h2>
+<p>Internet e estado da rede; cobrança do Google Play; ID de publicidade e serviços de anúncios do Android (atribuição, tópicos); estado básico do telefone (não sensível, usado por um SDK de anúncios); install referrer; notificações (lembretes); wake lock e serviço em primeiro plano (sincronização de dados, usado pelos downloads do Play Asset Delivery); atestado de aparelho da Amazon (SDK de anúncios, só aparelhos Amazon). Sem localização, contatos, câmera, microfone, fotos ou arquivos.</p>
+<hr>
+<h2>16. Alterações</h2>
+<p>Publicamos as mudanças neste endereço e atualizamos a data acima, antes da atualização do app que precisar delas.</p>
+<hr>
+<h2>17. Contato</h2>
+<p>chilltado — chilltadolab@gmail.com</p>
 </main>
-<footer><a href="/botraid-legal/">All BotRaid legal documents</a></footer>
+<footer><a href="/botraid-legal/">All BotRaid legal documents</a> · <a href="/legal/">All chilltado games</a> · <a href="mailto:chilltadolab@gmail.com">chilltadolab@gmail.com</a></footer>
 </body>
 </html>

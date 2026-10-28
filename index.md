@@ -2,11 +2,11 @@
 title: BotRaid — Legal
 ---
 
-# BotRaid: Idle Strategy TD
+# BotRaid: Robot Puzzle Battles
 
-Legal documents for the mobile game **BotRaid**, developed by chilltado.
+Legal documents for the Android game **BotRaid** (`com.chilltado.botconquest`), developed by chilltado.
 
-- [Privacy Policy](privacy-policy)
-- [Terms of Service](terms-of-service)
+- [Privacy Policy](privacy-policy) · [Política de Privacidade](privacy-policy/#pt)
+- [Terms of Service](terms-of-service) · [Termos de Serviço](terms-of-service/#pt)
 
-Contact: chilltadolab@gmail.com
+Last updated: 28 October 2026 · Contact: chilltadolab@gmail.com
